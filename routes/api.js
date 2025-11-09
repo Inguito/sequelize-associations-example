@@ -103,5 +103,6 @@ router.get("/students", async (req, res) => {
   const students = await db.Student.findAll({ include: "courses" });
   res.json(students);
 });
-
+// Al final exporto el router para usarlo 
+// en el archivo principal app.js
 export default router;
