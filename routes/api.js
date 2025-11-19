@@ -29,7 +29,8 @@ router.get("/users/getAll", async (req, res) => {
 // creo uno nuevo si no existe 
 router.put("/users/modify/:id", async (req, res) => {
   const { id } = req.params;
-  const { name, email, profile } = req.body;
+  //const { name, email, profile } = req.body;
+  const { name,email,profile} = req.body;
   try {
     // Busco el usuario por su ID
     const user = await db.User.findByPk(id,{ include:{

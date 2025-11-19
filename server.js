@@ -31,9 +31,10 @@ async function startServer() {
     console.log("🧩 Modelos sincronizados.");
     // Inicio el servidor
     app.listen(PORT, () => console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`));
-  } catch (error) {
+  } 
+  catch (error) {
     console.error("❌ Error al iniciar:", error);
   }
 }
-// Inicio el servidor
+// Ejecuto Inicio el servidor
 startServer();
